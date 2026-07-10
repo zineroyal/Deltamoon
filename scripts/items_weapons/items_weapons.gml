@@ -318,3 +318,28 @@ function item_w_freezering() : item_weapon() constructor {
     
     item_localize("item_w_freezering")
 }  
+function item_w_wood_knife() : item_weapon() constructor {
+	name = ["Wood BKnife"]
+	desc = ["A wooden practice blade with a carbon-\nreinforced core.", "--"]
+    lw_counterpart = item_w_lw_toothpick()
+	
+	stats = {
+		attack: 3,
+	}
+	icon = spr_ui_menu_icon_sword
+	weapon_whitelist = ["you"]
+	
+	reactions = {
+		
+	}
+    
+    sell_price = 30
+}
+function item_w_lw_toothpick() : item_weapon() constructor {
+    name = ["Toothpick"]
+	desc = ["* \"Toothpick\" - Weapon 1 AT{br}{resetx}{sleep(10)}* Mightier than a sword?{br}{resetx}{sleep(10)} * Maybe equal at best.", "--"]
+	
+	stats = {
+        attack: 1,
+    }
+}
