@@ -306,3 +306,15 @@ function item_a_lw_bandage() : item_armor() constructor {
     
     item_localize("item_c_lw_bandage")
 }
+function item_a_lw_locket() : item_armor() constructor {
+    name = ["Locket"]
+    desc = ["", "--"]
+	
+	stats = {
+		defense: 1,
+	}
+    unequipped = function(index) {
+        item_delete(index, ITEM_TYPE.LIGHT);
+        item_add(new item_lw_locket(), ITEM_TYPE.LIGHT);
+    }
+}

@@ -403,7 +403,7 @@ function party_m_you(_initialized_name) : party_m(_initialized_name) constructor
 	power_stats = [
 		"???",
 		"???",
-		["party_stat_guts", 2, spr_ui_menu_icon_fire],
+		"???",
 	]
 	
 	max_hp =	party_m_calculate_hp(90, lv)

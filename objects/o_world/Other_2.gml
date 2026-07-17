@@ -87,7 +87,7 @@ array_push(global.key_items, new item_key_cell_phone())
     save_entry("COMPLETE_TIME", 0)
     
     // light world data
-    save_entry("LW_NAME", loc("party_kris_name"))
+    save_entry("LW_NAME", "You")
     save_entry("LW_LV", 1)
     save_entry("LW_HP", 20)
     save_entry("LW_MAXHP", 20)
@@ -95,12 +95,12 @@ array_push(global.key_items, new item_key_cell_phone())
     save_entry("LW_SINCE_CHAPTER", undefined)
     
     save_entry("LW_WEAPON", 
-        new item_w_lw_pencil(), 
+        new item_w_lw_toothpick(), 
         function(_conv_data){ global.lw_weapon = _conv_data }, 
         function(_conv_data){ return global.lw_weapon }, 
     )
     save_entry("LW_ARMOR", 
-        new item_a_lw_bandage(), 
+        new item_a_lw_locket(), 
         function(_conv_data){ global.lw_armor = _conv_data }, 
         function(_conv_data){ return global.lw_armor }, 
     )
